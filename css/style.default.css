@@ -11975,6 +11975,19 @@ a.text-hover-dark:focus, a.text-hover-dark:hover {
   transform: none;
 }
 
+.work-heading {
+  font-size: 1.25rem;
+}
+
+.work-header {
+  font-size: 1rem;
+}
+
+.work-header-ul {
+  font-size: 0.71rem;
+  padding-left: 1rem;
+}
+
 .animated {
   transition: all 0.3s;
 }

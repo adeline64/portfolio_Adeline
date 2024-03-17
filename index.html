@@ -1,226 +1,464 @@
 <!DOCTYPE html>
 <html lang="fr">
-  <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Adeline LACABANNE - Développeuse Web</title>
-    <meta name="description" content="Développeuse web chevronnée avec une expertise dans HTML, CSS, PHP, JS, Java, Symfony, Spring et React. Formatrice passionnée et rédactrice créative.">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="robots" content="index,follow">
-    <!-- Google fonts-->
-    <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Roboto+Slab:400,700,100%7CRoboto:400,700,300,100" type="text/css">
-    <!-- Swiper.js-->
-    <link rel="stylesheet" href="vendor/swiper/swiper-bundle.min.css">
-    <!-- Leaflet-->
-    <link rel="stylesheet" href="vendor/leaflet/leaflet.css">
-    <!-- Universal Parallax-->
-    <link rel="stylesheet" href="vendor/universal-parallax/universal-parallax.css">
-    <!-- Animate.css-->
-    <link rel="stylesheet" href="vendor/animate.css/source/animate.css">
-    <!-- Theme stylesheet-->
-    <link rel="stylesheet" href="css/style.default.css" id="theme-stylesheet">
-    <!-- Custom stylesheet - for your changes-->
-    <link rel="stylesheet" href="css/custom.css">
-    <!-- Favicon-->
-    <link rel="shortcut icon" href="favicon.png">
-  </head>
-  <body class="scrollspy-example" data-bs-spy="scroll" data-bs-target="#navbar" data-bs-offset="0" tabindex="0">
-    <nav class="navbar navbar-expand-lg navbar-light py-4 py-lg-0 fixed-top bg-white border-bottom">
-      <div class="container"><a class="navbar-brand font-serif text-uppercase h6 text-primary fw-bold mb-0" href="#intro">Adeline LACABANNE</a>
-        <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-            <li class="nav-item"><a class="nav-link text-uppercase active" href="#intro">Introduction</a></li>
-            <li class="nav-item"><a class="nav-link text-uppercase" href="#about">A propos</a></li>
-            <li class="nav-item"><a class="nav-link text-uppercase" href="#services">Services</a></li>
-            <li class="nav-item"><a class="nav-link text-uppercase" href="#work">Mon travail</a></li>
-            <li class="nav-item"><a class="nav-link text-uppercase" href="#contact">Contact</a></li>
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Adeline LACABANNE - Développeuse Web</title>
+  <meta name="description"
+    content="Développeuse web chevronnée avec une expertise dans HTML, CSS, PHP, JS, Java, Symfony, Spring et React. Formatrice passionnée et rédactrice créative.">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="robots" content="index,follow">
+  <!-- Google fonts-->
+  <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Roboto+Slab:400,700,100%7CRoboto:400,700,300,100"
+    type="text/css">
+  <!-- Swiper.js-->
+  <link rel="stylesheet" href="vendor/swiper/swiper-bundle.min.css">
+  <!-- Leaflet-->
+  <link rel="stylesheet" href="vendor/leaflet/leaflet.css">
+  <!-- Universal Parallax-->
+  <link rel="stylesheet" href="vendor/universal-parallax/universal-parallax.css">
+  <!-- Animate.css-->
+  <link rel="stylesheet" href="vendor/animate.css/source/animate.css">
+  <!-- Theme stylesheet-->
+  <link rel="stylesheet" href="css/style.default.css" id="theme-stylesheet">
+  <!-- Custom stylesheet - for your changes-->
+  <link rel="stylesheet" href="css/custom.css">
+  <!-- Favicon-->
+  <link rel="shortcut icon" href="favicon.png">
+</head>
+
+<body class="scrollspy-example" data-bs-spy="scroll" data-bs-target="#navbar" data-bs-offset="0" tabindex="0">
+  <nav class="navbar navbar-expand-lg navbar-light py-4 py-lg-0 fixed-top bg-white border-bottom">
+    <div class="container"><a class="navbar-brand font-serif text-uppercase h6 text-primary fw-bold mb-0"
+        href="#intro">Adeline LACABANNE</a>
+      <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse"
+        data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+        aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+          <li class="nav-item"><a class="nav-link text-uppercase active" href="#intro">Introduction</a></li>
+          <li class="nav-item"><a class="nav-link text-uppercase" href="#about">A propos</a></li>
+          <li class="nav-item"><a class="nav-link text-uppercase" href="#services">Services</a></li>
+          <li class="nav-item"><a class="nav-link text-uppercase" href="#work">Mon travail</a></li>
+          <li class="nav-item"><a class="nav-link text-uppercase" href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <!-- INTRO SECTION-->
+  <section class="intro bg-cover bg-center d-flex align-items-center dark-overlay" id="intro"
+    style="background: url(img/home.jpg)">
+    <div class="overlay-content text-white w-100">
+      <div class="container text-center">
+        <div class="row">
+          <div class="col-lg-11 mx-auto">
+            <div class="pb-5 mb-lg-5 wow fadeInDown"><img src="img/logo-big.png"
+                alt="Développeuse Formatrice IT Adeline LACABANNE" width="130" style="margin-top: 6rem"></div>
+            <h1 class="intro-heading mb-5 wow fadeInDown" data-wow-delay="0.3s">Hello, hola, Bonjour !</h1>
+            <p class="h3 intro-text fw-normal wow fadeInUp" data-wow-delay="0.6s">
+              En tant que développeuse web chevronnée, je maîtrise les langages essentiels tels que HTML, CSS, PHP, JS,
+              Java, ainsi que des frameworks incontournables tels que Symfony, Spring et React.
+              <br><br>
+              Mon expertise s'étend à la conception et au développement sur mesure de sites web et d'applications.
+              <br><br>
+              Mon engagement pédagogique se manifeste dans mon rôle de formatrice dans des centres de formation pour
+              adultes, où je partage mes connaissances tout en rédigeant des cours et des exercices pertinents, offrant
+              ainsi une expérience d'apprentissage unique et adaptée à chaque élève.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!--  /- END INTRO SECTION-->
+  <!-- ABOUT SECTION -->
+  <section id="about">
+    <div class="container">
+      <header class="mb-5 text-center">
+        <h2 class="heading wow fadeInUp" data-wow-delay="0.3s">A propos</h2>
+      </header>
+      <div class="row gy-4">
+        <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.3s">
+          <h2>Je m'appelle Adeline</h2> <br><br>
+
+          <p>J'ai actuellement <span id="age"></span> ans, et je suis une développeuse web passionnée et expérimentée.
+            Mes compétences couvrent plusieurs technologies et langages de programmation tels que HTML, CSS, JS, Java,
+            PHP, React, Spring, Symfony.</p>
+
+          <p>En tant que développeuse, j'ai participé à divers projets, allant de la conception de sites web à
+            l'implémentation d'API et à l'élaboration de scripts en SQL.</p>
+
+          <p>En dehors de mon travail de développement, je suis également formatrice et rédactrice. En tant que
+            formatrice dans des centres de formation pour adultes, je partage mes connaissances et expérience. En tant
+            que rédactrice, ma passion pour la lecture se reflète dans mon travail de développement, où j'aime apporter
+            de la créativité et des idées nouvelles à mes projets.</p>
+
+          <p>En tant que professionnelle motivée et engagée, je suis toujours prête à relever de nouveaux défis et à
+            résoudre des problèmes complexes. Ma passion pour le développement et la lecture me permet d'apporter une
+            perspective unique à tous mes projets.</p>
+
+        </div>
+        <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.6s">
+          <div class="mb-3">
+            <p class="text-muted fw-light mb-0">PHP</p>
+            <div class="progress" style="height: 30px">
+              <div class="progress-bar opacity-6" role="progressbar" style="width: 60%" aria-valuenow="60"
+                aria-valuemin="0" aria-valuemax="100"></div>
+            </div>
+          </div>
+          <div class="mb-3">
+            <p class="text-muted fw-light mb-0">Javascript</p>
+            <div class="progress" style="height: 30px">
+              <div class="progress-bar opacity-7" role="progressbar" style="width: 40%" aria-valuenow="40"
+                aria-valuemin="0" aria-valuemax="100"></div>
+            </div>
+          </div>
+          <div class="mb-3">
+            <p class="text-muted fw-light mb-0">HTML</p>
+            <div class="progress" style="height: 30px">
+              <div class="progress-bar opacity-8" role="progressbar" style="width: 70%" aria-valuenow="70"
+                aria-valuemin="0" aria-valuemax="100"></div>
+            </div>
+          </div>
+          <div class="mb-3">
+            <p class="text-muted fw-light mb-0">CSS</p>
+            <div class="progress" style="height: 30px">
+              <div class="progress-bar opacity-9" role="progressbar" style="width: 70%" aria-valuenow="70"
+                aria-valuemin="0" aria-valuemax="100"></div>
+            </div>
+          </div>
+          <div class="mb-3">
+            <p class="text-muted fw-light mb-0">Java</p>
+            <div class="progress" style="height: 30px">
+              <div class="progress-bar opacity-10" role="progressbar" style="width: 60%" aria-valuenow="60"
+                aria-valuemin="0" aria-valuemax="100"></div>
+            </div>
+          </div>
+          <div class="mb-3">
+            <p class="text-muted fw-light mb-0">React</p>
+            <div class="progress" style="height: 30px">
+              <div class="progress-bar opacity-10" role="progressbar" style="width: 40%" aria-valuenow="40"
+                aria-valuemin="0" aria-valuemax="100"></div>
+            </div>
+          </div>
+          <div class="mb-3">
+            <p class="text-muted fw-light mb-0">Spring</p>
+            <div class="progress" style="height: 30px">
+              <div class="progress-bar opacity-10" role="progressbar" style="width: 60%" aria-valuenow="60"
+                aria-valuemin="0" aria-valuemax="100"></div>
+            </div>
+          </div>
+          <div class="mb-3">
+            <p class="text-muted fw-light mb-0">Symfony</p>
+            <div class="progress" style="height: 30px">
+              <div class="progress-bar opacity-10" role="progressbar" style="width: 60%" aria-valuenow="60"
+                aria-valuemin="0" aria-valuemax="100"></div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-lg-6 mx-auto text-center wow fadeInUp" data-wow-delay="0.7s"><img
+            class="rounded-circle img-fluid" src="img/about.jpg" alt="This is me - IT worker"></div>
+      </div>
+    </div>
+  </section>
+  <!-- /- END ABOUT SECTION -->
+  <!-- SERVICES SECTION -->
+  <section class="bg-primary text-white" id="services">
+    <div class="container text-center">
+      <header class="mb-5 wow fadeInDown">
+        <h2 class="heading heading-white">Services</h2>
+        <p class="text-muted wow fadeInUp" data-wow-delay="0.5s">Découvrez les services que je propose pour répondre à
+          vos besoins.</p>
+      </header>
+      <div class="row gy-3">
+        <div class="col-lg-4 wow fadeInUp" data-wow-delay="0.2s"><i
+            class="fa-4x fa-fw icon-shadow-primary mb-3 fab fa-html5"></i>
+          <h3 class="fw-normal mb-3">React</h3>
+          <p class="text-start small">Spécialisée dans React, je crée des interfaces utilisateur modernes et
+            interactives pour des applications web innovantes. Ma maîtrise de React, avec son approche composant, assure
+            des expériences utilisateur exceptionnelles et une performance optimale.</p>
+        </div>
+        <div class="col-lg-4 wow fadeInUp" data-wow-delay="0.4s"><i
+            class="fa-4x fa-fw icon-shadow-primary mb-3 fas fa-tachometer-alt"></i>
+          <h3 class="fw-normal mb-3">Symfony</h3>
+          <p class="text-start small">Spécialisée en PHP et Symfony, je crée des sites web et des applications
+            dynamiques. Ma connaissance approfondie de la syntaxe PHP et des fonctionnalités avancées de Symfony
+            garantit des solutions robustes et évolutives pour vos projets.</p>
+        </div>
+        <div class="col-lg-4 wow fadeInUp" data-wow-delay="0.4s"><i
+            class="fa-4x fa-fw icon-shadow-primary mb-3 fas fa-tachometer-alt"></i>
+          <h3 class="fw-normal mb-3">Spring</h3>
+          <p class="text-start small">Avec une solide expérience dans le framework Spring pour Java, je crée des
+            applications web performantes et évolutives. Ma connaissance approfondie de la syntaxe Java et des
+            fonctionnalités avancées de Spring garantit des solutions Java efficaces, alignées sur vos objectifs.</p>
+        </div>
+        <div class="col-lg-4 wow fadeInUp" data-wow-delay="0.4s"><i
+            class="fa-4x fa-fw icon-shadow-primary mb-3 fas fa-tachometer-alt"></i>
+          <h3 class="fw-normal mb-3">Cours sur Comeup</h3>
+          <p class="text-start small">Commandez des cours personnalisés sur la plateforme <a
+              href="https://comeup.com/fr/service/390487/rediger-des-cours-et-des-exercices-personnalises?affiliation=3r7yFw0q"
+              target="_blank" rel="noopener noreferrer" style="color: black">Comeup</a> pour approfondir vos compétences
+            ou celle de vos élèves. Profitez d'une expérience d'apprentissage adaptée à vos besoins.</p>
+        </div>
+        <div class="col-lg-4 wow fadeInUp" data-wow-delay="0.4s"><i
+            class="fa-4x fa-fw icon-shadow-primary mb-3 fas fa-tachometer-alt"></i>
+          <h3 class="fw-normal mb-3">Réduction Exclusive - Studi</h3>
+          <p class="text-start small">Bénéficiez d'une réduction exclusive de 500€ sur les cours en accédant à mon <a
+              href="https://drive.google.com/drive/folders/1XUh0O75qPSASBCKRE8bR_SD10mJNf4YY?usp=sharing"
+              target="_blank" style="color: black">dossier exclusif sur Google Drive</a>. Une opportunité spéciale pour
+            booster votre parcours d'apprentissage.</p>
+        </div>
+        <div class="col-lg-4 wow fadeInUp" data-wow-delay="0.4s"><i
+            class="fa-4x fa-fw icon-shadow-primary mb-3 fas fa-tachometer-alt"></i>
+          <h3 class="fw-normal mb-3">Apprentissage avec un formateur professionnel</h3>
+          <p class="text-start small">Explorez des formations approfondies dans diverses domaines en remplissant ce <a
+              href="https://app.stafy.fr/5Vl8JXOfgqojxuYv5ZWs-3687/1/mon-budget-formation" target="_blank"
+              style="color: black">formulaire sur Stafy</a>.</p>
+        </div>
+      </div>
+      <hr class="my-4">
+      <div class="wow fadeInUp" data-wow-delay="0.6s">
+        <p class="lead">Souhaitez-vous en savoir plus sur un sujet particulier ?</p><a class="btn btn-outline-light"
+          href="#contact">Contactez moi </a>
+      </div>
+    </div>
+  </section>
+  <!-- /- END SERVICES SECTION -->
+  <!-- REFERENCES SECTION -->
+  <section id="work">
+    <div class="container">
+      <header class="mb-5 text-center">
+        <div class="row mb-5 wow fadeInUp">
+          <div class="col-lg-8 mx-auto">
+            <h2 class="heading">Mon travail dans les centres de formation</h2>
+          </div>
+        </div>
+        <p class="lead wow fadeInUp" data-wow-delay="0.1s">En tant que formatrice, j'ai travaillé au sein de plusieurs
+          centres de formation pour adultes, contribuant significativement au développement professionnel des
+          apprenants.</p>
+      </header>
+      <div class="row gy-4" id="content">
+        <div class="col-lg-4 col-md-6 mix wow fadeInUp all dev" data-wow-delay="0s" data-order="1"><a
+            class="d-block work-item" href="#" data-bs-toggle="modal" data-bs-target="#item1Modal"> <img
+              class="img-fluid w-100" src="img/formation31.png" alt="Formatrice chez Formation31">
+            <div class="overlay">
+              <h3 class="work-heading">Cours Concepteur UI et DWWM</h3>
+              <h4 class="work-header">Mars 2024 - Aujourd'hui</h4>
+              <ul class="work-header-ul">
+                <li>Maquettage : Figma</li>
+                <li>Webmarketing : SEO, SMO, E-réputation, optimisation d'un site et de sa vitesse de chargement</li>
+                <li>Technologies Front-End : HTML, CSS, JavaScript, TypeScript.</li>
+                <li>Frameworks : Bootstrap, VueJS, Angular, NodeJS, Express, Symfony, Laravel</li>
+                <li>Bibliothèque : React</li>
+                <li>Gestion de Versions et Collaboration : GitHub, Git, GitLab</li>
+                <li>Environnements de Développement : MAMP, WampServer, XAMPP</li>
+                <li>Back-End : PHP procédural et PHP Objet</li>
+                <li>Modélisation de Données : MCD, MLD, MPD</li>
+                <li>Base de données : MySQL, MongoDB.</li>
+                <li>Veille technologique</li>
+                <li>CMS : Wordpress, Prestashop</li>
+                <li>Test : PHPUnit</li>
+                <li>Api rest</li>
+                <li>Sécurité du site</li>
+                <li>Rédaction : Préparation de dossiers professionnels et de projets.</li>
+                <li>Auto-entreprise</li>
+              </ul>
+            </div>
+          </a>
+        </div>
+        <div class="col-lg-4 col-md-6 mix wow fadeInUp all dev" data-wow-delay="0s" data-order="1"><a
+          class="d-block work-item" href="#" data-bs-toggle="modal" data-bs-target="#item1Modal"> <img
+            class="img-fluid w-100" src="img/osengo.jpeg" alt="Jury Osengo">
+          <div class="overlay">
+            <h3 class="work-heading"> Jury d’Examen pour la Validation de Titre professionnel Concepteur développeur d’applications</h3>
+            <h4 class="work-header">Mars 2024</h4>
+          </div>
+        </a>
+      </div>
+        <div class="col-lg-4 col-md-6 mix wow fadeInUp all dev" data-wow-delay="0s" data-order="1"><a
+            class="d-block work-item" href="#" data-bs-toggle="modal" data-bs-target="#item1Modal"> <img
+              class="img-fluid w-100" src="img/formation31.png" alt="Formatrice chez Formation31">
+            <div class="overlay">
+              <h3 class="work-heading">Cours de Soutien groupe DWWM</h3>
+              <h4 class="work-header">Février 2024 - Aujourd'hui</h4>
+              <ul class="work-header-ul">
+                <li>E-réputation</li>
+                <li>Technologies Front-End : TypeScript</li>
+                <li>Back-End : PHP procédural et PHP Objet</li>
+                <li>Base de données : SQL</li>
+                <li>Modélisation de Données : MCD, MLD, MPD</li>
+                <li>Frameworks : Symfony, Angular</li>
+                <li>Bibliothèque : React</li>
+                <li>Gestion de Versions et Collaboration : GitHub, Git, GitLab</li>
+                <li>SEO (Search Engine Optimization)</li>
+                <li>Veille technologique</li>
+                <li>Conseil sur l'Auto-entreprise</li>
+              </ul>
+            </div>
+          </a>
+        </div>
+        <div class="col-lg-4 col-md-6 mix wow fadeInUp all dev" data-wow-delay="0s" data-order="1"><a
+            class="d-block work-item" href="#" data-bs-toggle="modal" data-bs-target="#item1Modal"> <img
+              class="img-fluid w-100" src="img/Home teachers.png" alt="Formatrice chez Home Teachers">
+            <div class="overlay">
+              <h3 class="work-heading">Cours d'informatique</h3>
+              <h4 class="work-header">Février 2024 - Aujourd'hui</h4>
+            </div>
+          </a>
+        </div>
+        <div class="col-lg-4 col-md-6 mix wow fadeInUp all dev" data-wow-delay="0s" data-order="1"><a
+          class="d-block work-item" href="#" data-bs-toggle="modal" data-bs-target="#item1Modal"> <img
+            class="img-fluid w-100" src="img/epsi.png" alt="Conceptrice MSPR Epsi">
+          <div class="overlay">
+            <h3 class="work-heading">Créatrice d'un support MSPR et de la grille d'évaluation</h3>
+            <h4 class="work-header">Février 2024 - Aujourd'hui</h4>
+            <p>Projet transversal : Concevoir & exploiter une base de données dans un environnement web / Définir une stratégie d'acquisition de leads</p>
+            <ul class="work-header-ul">
+              <li>Conception de BDD UML/MERISE</li>
+              <li>Conception requêtes SQL</li>
+              <li>Emailing</li>
+              <li>Fondamentaux du marketing</li>
+              <li>SEO/SEA</li>
+            </ul>
+          </div>
+        </a>
+      </div>
+        <div class="col-lg-4 col-md-6 mix wow fadeInUp all dev" data-wow-delay="0.1s" data-order="2"><a
+            class="d-block work-item" href="#" data-bs-toggle="modal" data-bs-target="#item2Modal"> <img
+              class="img-fluid w-100" src="img/pcworks31.png" alt="Formatrice chez Pcworks31">
+            <div class="overlay">
+              <h3 class="work-heading">Formatrice Soutien aux apprenants</h3>
+              <h4 class="work-header">Janvier 2024 - Aujourd'hui</h4>
+              <ul class="work-header-ul">
+                <li>Réponse aux questions des apprenants sur les salon Discord</li>
+              </ul>
+            </div>
+          </a>
+        </div>
+        <div class="col-lg-4 col-md-6 mix wow fadeInUp all dev" data-wow-delay="0.1s" data-order="2"><a
+          class="d-block work-item" href="#" data-bs-toggle="modal" data-bs-target="#item2Modal"> <img
+            class="img-fluid w-100" src="img/Pro Alterna.png" alt="Coach chez Pro Alterna">
+          <div class="overlay">
+            <h3 class="work-heading">Coach en Développement Web et Web Mobile</h3>
+            <h4 class="work-header">Janvier 2024 - Aujourd'hui</h4>
+            <ul class="work-header-ul">
+              <li>Accompagnement Personnalisé : Suivi de 20 apprenants par session, fournissant un coaching adapté à leurs besoins individuels et à leurs objectifs d'apprentissage.</li>
+              <li>Coaching Synchrone</li>
+              <li>Coaching Asynchrone</li>
+            </ul>
+          </div>
+        </a>
+      </div>
+        <div class="col-lg-4 col-md-6 mix wow fadeInUp all dev" data-wow-delay="0s" data-order="1"><a
+          class="d-block work-item" href="#" data-bs-toggle="modal" data-bs-target="#item1Modal"> <img
+            class="img-fluid w-100" src="img/epsi.png" alt="Conceptrice E-learning chez epsi">
+          <div class="overlay">
+            <h3 class="work-heading">Concepteur UI/UX - Consultant & Optimisation de Contenus de Formation en Ligne</h3>
+            <h4 class="work-header">Janvier 2024 - Février 2024</h4>
+            <ul class="work-header-ul">
+              <li>Analyse des vidéos, des articles, des PDF, et d'autres matériaux pédagogiques</li>
+              <li>Correction des Erreurs dans les Cours</li>
+              <li>Rédaction d’exercice</li>
+              <li>Recherche d’exercice complémentaire</li>
+              <li>Collaboration avec l'Ingénieur Pédagogique</li>
+            </ul>
+          </div>
+        </a>
+      </div>
+        <div class="col-lg-4 col-md-6 mix wow fadeInUp all dev" data-wow-delay="0s" data-order="1"><a
+            class="d-block work-item" href="#" data-bs-toggle="modal" data-bs-target="#item1Modal"> <img
+              class="img-fluid w-100" src="img/formation31.png" alt="Formatrice chez Formation31">
+            <div class="overlay">
+              <h3 class="work-heading">Cours de Soutien individuel aux apprenants</h3>
+              <h4 class="work-header">Septembre 2023 - Aujourd'hui</h4>
+              <ul class="work-header-ul">
+                <li>Technologies Front-End : HTML, CSS</li>
+                <li>Back-End : PHP</li>
+                <li>Frameworks : Bootstrap, Symfony</li>
+                <li>Maquettage : Figma</li>
+                <li>Modélisation de Données : MCD, MLD, MPD</li>
+                <li>Rédaction : Dossier professionnel et le Dossier de projet</li>
+              </ul>
+            </div>
+          </a>
+        </div>
+        <div class="col-lg-4 col-md-6 mix wow fadeInUp all dev" data-wow-delay="0.1s" data-order="2"><a
+            class="d-block work-item" href="#" data-bs-toggle="modal" data-bs-target="#item2Modal"> <img
+              class="img-fluid w-100" src="img/formation31.png" alt="Formatrice chez Formation31">
+            <div class="overlay">
+              <h3 class="work-heading">Cours concepteurs UI</h3>
+              <h4 class="work-header">Septembre 2023 - Janvier 2024</h4>
+              <ul class="work-header-ul">
+                <li>Technologies Front-End : HTML, CSS</li>
+                <li>Langage Back-End : PHP.</li>
+                <li>Base de données : SQL.</li>
+                <li>Modélisation de Données : MCD, MLD, MPD.</li>
+                <li>Frameworks : Bootstrap, Symfony</li>
+                <li>Bibliothèque : React</li>
+                <li>Environnements de Développement : MAMP, WampServer.</li>
+                <li>Gestion de Versions et Collaboration : GitHub, Git, GitLab.</li>
+                <li>Outils de Gestion de Projet : Trello.</li>
+                <li>Webmarketing : SEO, SMO, E-réputation, optimisation d'un site et de sa vitesse de chargement</li>
+                <li>Sécurité du site</li>
+                <li>CMS : Prestashop</li>
+                <li>Veille technologique</li>
+                <li>Rédaction : Dossier professionnel et le Dossier de projet</li>
+              </ul>
+            </div>
+          </a>
+        </div>
+        <div class="col-lg-4 col-md-6 mix wow fadeInUp all dev" data-wow-delay="0.1s" data-order="2"><a
+            class="d-block work-item" href="#" data-bs-toggle="modal" data-bs-target="#item2Modal"> <img
+              class="img-fluid w-100" src="img/Home teachers.png" alt="Rédactrice chez Home Teachers">
+            <div class="overlay">
+              <h3 class="work-heading">Rédactrice de contenus éducatifs - Collège - Scratch</h3>
+              <h4 class="work-header">Janvier 2024</h4>
+              <ul class="work-header-ul">
+                <li>le cours : mouvement, son, déclarer une variable, boucle, condition</li>
+                <li>Le TD (20-30 exercices)</li>
+                <li>Le corrigé du TD</li>
+                <li>1 script de vidéo associé</li>
+              </ul>
+            </div>
+          </a>
+        </div>
+        <div class="col-lg-4 col-md-6 mix wow fadeInUp all dev" data-wow-delay="0.1s" data-order="2"><a
+          class="d-block work-item" href="#" data-bs-toggle="modal" data-bs-target="#item2Modal"> <img
+            class="img-fluid w-100" src="img/Home teachers.png" alt="Rédactrice chez Home Teachers">
+          <div class="overlay">
+            <h3 class="work-heading">Rédactrice de contenus éducatifs - Lycée - Python</h3>
+            <h4 class="work-header">Janvier 2024</h4>
+            <ul class="work-header-ul">
+              <li>le cours : déclarer une variable, boucle, condition, fonction, library (random,date, matplotlib)
+              </li>
+              <li>Le TD (40-50 exercices)</li>
+              <li>Le corrigé du TD</li>
+              <li>1 script de vidéo associé</li>
+            </ul>
+          </div>
+        </a>
+      </div>
+      <div class="col-lg-4 col-md-6 mix wow fadeInUp all dev" data-wow-delay="0.1s" data-order="2"><a
+        class="d-block work-item" href="#" data-bs-toggle="modal" data-bs-target="#item2Modal"> <img
+          class="img-fluid w-100" src="img/Home teachers.png" alt="Rédactrice chez Home Teachers">
+        <div class="overlay">
+          <h3 class="work-heading">Rédactrice de contenus éducatifs - Collège - Nombres entiers</h3>
+          <h4 class="work-header">Janvier 2024</h4>
+          <ul class="work-header-ul">
+            <li>Le TD (5-10 exercices)</li>
+            <li>Le corrigé du TD</li>
           </ul>
         </div>
-      </div>
-    </nav>
-    <!-- INTRO SECTION-->
-    <section class="intro bg-cover bg-center d-flex align-items-center dark-overlay" id="intro" style="background: url(img/home.jpg)">
-      <div class="overlay-content text-white w-100">
-        <div class="container text-center">
-          <div class="row">
-            <div class="col-lg-11 mx-auto">
-              <div class="pb-5 mb-lg-5 wow fadeInDown"><img src="img/logo-big.png" alt="Développeuse Formatrice IT Adeline LACABANNE" width="130" style="margin-top: 6rem"></div>
-              <h1 class="intro-heading mb-5 wow fadeInDown" data-wow-delay="0.3s">Hello, hola, Bonjour !</h1>
-              <p class="h3 intro-text fw-normal wow fadeInUp" data-wow-delay="0.6s">
-                En tant que développeuse web chevronnée, je maîtrise les langages essentiels tels que HTML, CSS, PHP, JS, Java, ainsi que des frameworks incontournables tels que Symfony, Spring et React. 
-                <br><br>
-                Mon expertise s'étend à la conception et au développement sur mesure de sites web et d'applications. 
-                <br><br>
-                Mon engagement pédagogique se manifeste dans mon rôle de formatrice dans des centres de formation pour adultes, où je partage mes connaissances tout en rédigeant des cours et des exercices pertinents, offrant ainsi une expérience d'apprentissage unique et adaptée à chaque élève.</p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-    <!--  /- END INTRO SECTION-->
-    <!-- ABOUT SECTION -->
-    <section id="about">
-      <div class="container">
-        <header class="mb-5 text-center">
-          <h2 class="heading wow fadeInUp" data-wow-delay="0.3s">A propos</h2>
-        </header>
-        <div class="row gy-4">
-          <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.3s">
-            <h2>Je m'appelle Adeline</h2> <br><br>
-
-            <p>J'ai actuellement <span id="age"></span> ans, et je suis une développeuse web passionnée et expérimentée. Mes compétences couvrent plusieurs technologies et langages de programmation tels que HTML, CSS, JS, Java, PHP, React, Spring, Symfony.</p> 
-
-            <p>En tant que développeuse, j'ai participé à divers projets, allant de la conception de sites web à l'implémentation d'API et à l'élaboration de scripts en SQL.</p> 
-
-            <p>En dehors de mon travail de développement, je suis également formatrice et rédactrice. En tant que formatrice dans des centres de formation pour adultes, je partage mes connaissances et expérience. En tant que rédactrice, ma passion pour la lecture se reflète dans mon travail de développement, où j'aime apporter de la créativité et des idées nouvelles à mes projets.</p> 
-
-            <p>En tant que professionnelle motivée et engagée, je suis toujours prête à relever de nouveaux défis et à résoudre des problèmes complexes. Ma passion pour le développement et la lecture me permet d'apporter une perspective unique à tous mes projets.</p>
-
-          </div>
-          <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.6s">
-            <div class="mb-3">
-              <p class="text-muted fw-light mb-0">PHP</p>
-              <div class="progress" style="height: 30px">
-                <div class="progress-bar opacity-6" role="progressbar" style="width: 60%" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100"></div>
-              </div>
-            </div>
-            <div class="mb-3">
-              <p class="text-muted fw-light mb-0">Javascript</p>
-              <div class="progress" style="height: 30px">
-                <div class="progress-bar opacity-7" role="progressbar" style="width: 40%" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100"></div>
-              </div>
-            </div>
-            <div class="mb-3">
-              <p class="text-muted fw-light mb-0">HTML</p>
-              <div class="progress" style="height: 30px">
-                <div class="progress-bar opacity-8" role="progressbar" style="width: 70%" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100"></div>
-              </div>
-            </div>
-            <div class="mb-3">
-              <p class="text-muted fw-light mb-0">CSS</p>
-              <div class="progress" style="height: 30px">
-                <div class="progress-bar opacity-9" role="progressbar" style="width: 70%" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100"></div>
-              </div>
-            </div>
-            <div class="mb-3">
-              <p class="text-muted fw-light mb-0">Java</p>
-              <div class="progress" style="height: 30px">
-                <div class="progress-bar opacity-10" role="progressbar" style="width: 60%" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100"></div>
-              </div>
-            </div>
-            <div class="mb-3">
-              <p class="text-muted fw-light mb-0">React</p>
-              <div class="progress" style="height: 30px">
-                <div class="progress-bar opacity-10" role="progressbar" style="width: 40%" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100"></div>
-              </div>
-            </div>
-            <div class="mb-3">
-              <p class="text-muted fw-light mb-0">Spring</p>
-              <div class="progress" style="height: 30px">
-                <div class="progress-bar opacity-10" role="progressbar" style="width: 60%" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100"></div>
-              </div>
-            </div>
-            <div class="mb-3">
-              <p class="text-muted fw-light mb-0">Symfony</p>
-              <div class="progress" style="height: 30px">
-                <div class="progress-bar opacity-10" role="progressbar" style="width: 60%" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100"></div>
-              </div>
-            </div>
-          </div>
-          <div class="col-lg-4 col-lg-6 mx-auto text-center wow fadeInUp" data-wow-delay="0.7s"><img class="rounded-circle img-fluid" src="img/about.png" alt="This is me - IT worker"></div>
-        </div>
-      </div>
-    </section>
-    <!-- /- END ABOUT SECTION -->
-    <!-- SERVICES SECTION -->
-    <section class="bg-primary text-white" id="services">
-      <div class="container text-center">
-        <header class="mb-5 wow fadeInDown">
-          <h2 class="heading heading-white">Services</h2>
-          <p class="text-muted wow fadeInUp" data-wow-delay="0.5s">Découvrez les services que je propose pour répondre à vos besoins.</p>
-        </header>
-        <div class="row gy-3">
-          <div class="col-lg-4 wow fadeInUp" data-wow-delay="0.2s"><i class="fa-4x fa-fw icon-shadow-primary mb-3 fab fa-html5"></i>
-            <h3 class="fw-normal mb-3">React</h3>
-            <p class="text-start small">Spécialisée dans React, je crée des interfaces utilisateur modernes et interactives pour des applications web innovantes. Ma maîtrise de React, avec son approche composant, assure des expériences utilisateur exceptionnelles et une performance optimale.</p>
-          </div>
-          <div class="col-lg-4 wow fadeInUp" data-wow-delay="0.4s"><i class="fa-4x fa-fw icon-shadow-primary mb-3 fas fa-tachometer-alt"></i>
-            <h3 class="fw-normal mb-3">Symfony</h3>
-            <p class="text-start small">Spécialisée en PHP et Symfony, je crée des sites web et des applications dynamiques. Ma connaissance approfondie de la syntaxe PHP et des fonctionnalités avancées de Symfony garantit des solutions robustes et évolutives pour vos projets.</p>
-          </div>
-          <div class="col-lg-4 wow fadeInUp" data-wow-delay="0.4s"><i class="fa-4x fa-fw icon-shadow-primary mb-3 fas fa-tachometer-alt"></i>
-            <h3 class="fw-normal mb-3">Spring</h3>
-            <p class="text-start small">Avec une solide expérience dans le framework Spring pour Java, je crée des applications web performantes et évolutives. Ma connaissance approfondie de la syntaxe Java et des fonctionnalités avancées de Spring garantit des solutions Java efficaces, alignées sur vos objectifs.</p>
-          </div>
-          <div class="col-lg-4 wow fadeInUp" data-wow-delay="0.4s"><i class="fa-4x fa-fw icon-shadow-primary mb-3 fas fa-tachometer-alt"></i>
-            <h3 class="fw-normal mb-3">Cours sur Comeup</h3>
-            <p class="text-start small">Commandez des cours personnalisés sur la plateforme <a href="https://comeup.com/fr/service/390487/rediger-des-cours-et-des-exercices-personnalises?affiliation=3r7yFw0q" target="_blank" rel="noopener noreferrer" style="color: black">Comeup</a> pour approfondir vos compétences ou celle de vos élèves. Profitez d'une expérience d'apprentissage adaptée à vos besoins.</p>
-          </div>
-          <div class="col-lg-4 wow fadeInUp" data-wow-delay="0.4s"><i class="fa-4x fa-fw icon-shadow-primary mb-3 fas fa-tachometer-alt"></i>
-            <h3 class="fw-normal mb-3">Réduction Exclusive - Studi</h3>
-            <p class="text-start small">Bénéficiez d'une réduction exclusive de 500€ sur les cours en accédant à mon <a href="https://drive.google.com/drive/folders/1XUh0O75qPSASBCKRE8bR_SD10mJNf4YY?usp=sharing" target="_blank" style="color: black">dossier exclusif sur Google Drive</a>. Une opportunité spéciale pour booster votre parcours d'apprentissage.</p>
-          </div>
-          <div class="col-lg-4 wow fadeInUp" data-wow-delay="0.4s"><i class="fa-4x fa-fw icon-shadow-primary mb-3 fas fa-tachometer-alt"></i>
-            <h3 class="fw-normal mb-3">Apprentissage avec un formateur professionnel</h3>
-            <p class="text-start small">Explorez des formations approfondies dans diverses domaines en remplissant ce <a href="https://app.stafy.fr/5Vl8JXOfgqojxuYv5ZWs-3687/1/mon-budget-formation" target="_blank" style="color: black">formulaire sur Stafy</a>.</p>
-          </div>
-        </div>
-        <hr class="my-4">
-        <div class="wow fadeInUp" data-wow-delay="0.6s">
-          <p class="lead">Souhaitez-vous en savoir plus sur un sujet particulier ?</p><a class="btn btn-outline-light" href="#contact">Contactez moi </a>
-        </div>
-      </div>
-    </section>
-    <!-- /- END SERVICES SECTION -->
-    <!-- REFERENCES SECTION -->
-    <section id="work">
-      <div class="container"> 
-        <header class="mb-5 text-center">
-          <div class="row mb-5 wow fadeInUp">
-            <div class="col-lg-8 mx-auto">
-              <h2 class="heading">Mon travail dans les centres de formation</h2>
-            </div>
-          </div>
-          <p class="lead wow fadeInUp" data-wow-delay="0.1s">En tant que formatrice, j'ai travaillé au sein de plusieurs centres de formation pour adultes, contribuant significativement au développement professionnel des apprenants.</p>
-        </header>
-        <div class="row gy-4" id="content">
-          <div class="col-lg-4 col-md-6 mix wow fadeInUp all dev" data-wow-delay="0s" data-order="1"><a class="d-block work-item" href="#" data-bs-toggle="modal" data-bs-target="#item1Modal"> <img class="img-fluid w-100" src="img/formation31.png" alt="Formatrice chez Fomration31">
-              <div class="overlay">
-                <h3 class="work-heading">Cours de soutien</h3>
-                <p>Conception et dispensation de cours de soutien, en mettant l'accent sur la vulgarisation de l'information pour assurer une compréhension approfondie.</p>
-                <ul>
-                  <li>Technologies Front-End : HTML, CSS</li>
-                  <li>Frameworks : Bootstrap</li>
-                  <li>Maquettage : Figma</li>
-                  <li>Modélisation de Données : MCD, MLD, MPD</li>
-                  <li>Rédaction : Dossier professionnel et le Dossier de projet</li>
-                </ul>
-              </div>
-            </a>
-          </div>
-          <div class="col-lg-4 col-md-6 mix wow fadeInUp all dev" data-wow-delay="0.1s" data-order="2"><a class="d-block work-item" href="#" data-bs-toggle="modal" data-bs-target="#item2Modal"> <img class="img-fluid w-100" src="img/formation31.png" alt="Formatrice chez Fomration31">
-              <div class="overlay">
-                <h3 class="work-heading">Cours pour concepteurs UI</h3>
-                <p>Dispensation de cours spécialisés pour les concepteurs UI, partageant mon expertise dans le développement d'interfaces utilisateur intuitives et esthétiques.</p>
-                <ul>
-                  <li>Technologies Front-End : HTML, CSS</li>
-                  <li>Langage Back-End : PHP.</li>
-                  <li>Base de données : SQL.</li>
-                  <li>Modélisation de Données : MCD, MLD, MPD.</li>
-                  <li>Environnements de Développement : MAMP, WampServer.</li>
-                  <li>Gestion de Versions et Collaboration : GitHub, Git, GitLab.</li>
-                  <li>Outils de Gestion de Projet : Trello.</li>
-                  <li>E-réputation</li>
-                </ul>
-              </div>
-            </a>
-          </div>
-          <div class="col-lg-4 col-md-6 mix wow fadeInUp all dev" data-wow-delay="0.1s" data-order="2"><a class="d-block work-item" href="#" data-bs-toggle="modal" data-bs-target="#item2Modal"> <img class="img-fluid w-100" src="img/pcworks31.png" alt="Formatrice chez Pcworks31">
+      </a>
+    </div>
+        <div class="col-lg-4 col-md-6 mix wow fadeInUp all dev" data-wow-delay="0.1s" data-order="2"><a
+            class="d-block work-item" href="#" data-bs-toggle="modal" data-bs-target="#item2Modal"> <img
+              class="img-fluid w-100" src="img/pcworks31.png" alt="Conceptrice E-learning chez Pcworks31">
             <div class="overlay">
               <h3 class="work-heading">Créatrice de Contenu Éducatif en Vidéo</h3>
-              <p>Réalisation de cours théorique et pratique au format vidéo sur Figma</p>
-              <ul>
+              <h4 class="work-header">Janvier 2024 - Février 2024</h4>
+              <ul class="work-header-ul">
                 <li>Histoire de Figma</li>
                 <li>Qu'est-ce qu'un Wireframe</li>
                 <li>Qu'est-ce qu'une Maquette</li>
@@ -229,156 +467,163 @@
                 <li>Projet d'exemple à réaliser</li>
               </ul>
             </div>
-            </a>
-          </div>
-          <div class="col-lg-4 col-md-6 mix wow fadeInUp all dev" data-wow-delay="0.1s" data-order="2"><a class="d-block work-item" href="#" data-bs-toggle="modal" data-bs-target="#item2Modal"> <img class="img-fluid w-100" src="img/Home teachers.png" alt="Rédactrice chez Home Teachers">
+          </a>
+        </div>
+        <div class="col-lg-4 col-md-6 mix wow fadeInUp all dev" data-wow-delay="0.1s" data-order="2"><a
+            class="d-block work-item" href="#" data-bs-toggle="modal" data-bs-target="#item2Modal"> <img
+              class="img-fluid w-100" src="img/studi.png" alt="Rédactrice chez Studi">
             <div class="overlay">
-              <h3 class="work-heading">Rédactrice de contenus éducatifs - Scratch</h3>
-              <p>Rédaction de cours Scratch niveau Collège</p>
-              <ul>
-                <li>le cours : mouvement, son, déclarer une variable, boucle, condition</li>
-                <li>Le TD (20-30 exercices)</li>
-                <li>Le corrigé du TD</li>
-                <li>1 script de vidéo associé</li>
-              </ul>
-            </div>
-            </a>
-          </div>
-          <div class="col-lg-4 col-md-6 mix wow fadeInUp all dev" data-wow-delay="0.1s" data-order="2"><a class="d-block work-item" href="#" data-bs-toggle="modal" data-bs-target="#item2Modal"> <img class="img-fluid w-100" src="img/Home teachers.png" alt="Rédactrice chez Home Teachers">
-            <div class="overlay">
-              <h3 class="work-heading">Rédactrice de contenus éducatifs - Python</h3>
-              <p>Rédaction de cours Python niveau Lycée</p>
-              <ul>
-                <li>le cours : déclarer une variable, boucle, condition, fonction, library (random,date, matplotlib)</li>
-                <li>Le TD (40-50 exercices)</li>
-                <li>Le corrigé du TD</li>
-                <li>1 script de vidéo associé</li>
-              </ul>
-            </div>
-            </a>
-          </div>
-          <div class="col-lg-4 col-md-6 mix wow fadeInUp all dev" data-wow-delay="0.1s" data-order="2"><a class="d-block work-item" href="#" data-bs-toggle="modal" data-bs-target="#item2Modal"> <img class="img-fluid w-100" src="img/studi.png" alt="Rédactrice chez Studi">
-            <div class="overlay">
-              <h3 class="work-heading">Analyste de la Qualité des Contenus Éducatifs et Vidéos de Formation - Confluence</h3>
-              <p>Analyse des cours confluence</p>
-              <ul>
+              <h3 class="work-heading">Analyste de la Qualité des Contenus Éducatifs et Vidéos de Formation - Confluence
+              </h3>
+              <h4 class="work-header">Novembre 2023 - Janvier 2024</h4>
+              <ul class="work-header-ul">
                 <li>Utiliser un outil collaboratif de gestion de projet</li>
                 <li>Documenter ses projets avec Confluence</li>
               </ul>
             </div>
-            </a>
-          </div>
-          <div class="col-lg-4 col-md-6 mix wow fadeInUp all dev" data-wow-delay="0.1s" data-order="2"><a class="d-block work-item" href="#" data-bs-toggle="modal" data-bs-target="#item2Modal"> <img class="img-fluid w-100" src="img/studi.png" alt="Rédactrice chez Studi">
+          </a>
+        </div>
+        <div class="col-lg-4 col-md-6 mix wow fadeInUp all dev" data-wow-delay="0.1s" data-order="2"><a
+            class="d-block work-item" href="#" data-bs-toggle="modal" data-bs-target="#item2Modal"> <img
+              class="img-fluid w-100" src="img/studi.png" alt="Rédactrice chez Studi">
             <div class="overlay">
               <h3 class="work-heading">Analyste de la Qualité des Contenus Éducatifs et Vidéos de Formation - Jira</h3>
-              <p>Analyse du cours Jira</p>
-              <ul>
+              <h4 class="work-header">Novembre 2023 - Janvier 2024</h4>
+              <ul class="work-header-ul">
                 <li> Les options avancées de Jira pour la gestion de projet</li>
               </ul>
             </div>
-            </a>
+          </a>
+        </div>
+        <div class="col-lg-4 col-md-6 mix wow fadeInUp all dev" data-wow-delay="0.1s" data-order="2"><a
+          class="d-block work-item" href="#" data-bs-toggle="modal" data-bs-target="#item2Modal"> <img
+            class="img-fluid w-100" src="img/Home teachers.png" alt="Rédactrice chez Home Teachers">
+          <div class="overlay">
+            <h3 class="work-heading">Rédactrice de contenus éducatifs - Terminal SES - Comment est structurée la société française actuelle ?</h3>
+            <h4 class="work-header">Décembre 2023</h4>
+            <ul class="work-header-ul">
+              <li>Création d'un plan de cours</li>
+              <li>Rédaction du cours</li>
+            </ul>
           </div>
-          <div class="col-lg-4 col-md-6 mix wow fadeInUp all dev" data-wow-delay="0.1s" data-order="2"><a class="d-block work-item" href="#" data-bs-toggle="modal" data-bs-target="#item2Modal"> <img class="img-fluid w-100" src="img/studi.png" alt="Rédactrice chez Studi">
+        </a>
+      </div>
+        <div class="col-lg-4 col-md-6 mix wow fadeInUp all dev" data-wow-delay="0.1s" data-order="2"><a
+            class="d-block work-item" href="#" data-bs-toggle="modal" data-bs-target="#item2Modal"> <img
+              class="img-fluid w-100" src="img/studi.png" alt="Rédactrice chez Studi">
             <div class="overlay">
               <h3 class="work-heading">Rédactrice et Productrice de Contenus Éducatifs Multimédias - GitLab</h3>
-              <p>Rédaction du cours GitLab</p>
-              <ul>
+              <h4 class="work-header">Novembre 2023 - Décembre 2023</h4>
+              <ul class="work-header-ul">
                 <li> Les différences entre GitLab et GitHub</li>
               </ul>
             </div>
-            </a>
-          </div>
-          <div class="col-lg-4 col-md-6 mix wow fadeInUp all dev" data-wow-delay="0.1s" data-order="2"><a class="d-block work-item" href="#" data-bs-toggle="modal" data-bs-target="#item2Modal"> <img class="img-fluid w-100" src="img/Pro Alterna.png" alt="Formatrice chez Pro Alterna">
+          </a>
+        </div>
+        <div class="col-lg-4 col-md-6 mix wow fadeInUp all dev" data-wow-delay="0.1s" data-order="2"><a
+            class="d-block work-item" href="#" data-bs-toggle="modal" data-bs-target="#item2Modal"> <img
+              class="img-fluid w-100" src="img/Pro Alterna.png" alt="Formatrice chez Pro Alterna">
             <div class="overlay">
               <h3 class="work-heading">Cours pour les Concepteur Développeur d'Application - Pro-Alterna</h3>
-              <p>Dispensation de cours de rédaction</p>
-              <ul>
+              <h4 class="work-header">Novembre 2023</h4>
+              <ul class="work-header-ul">
                 <li> Dossier professionnel et le Dossier de projet</li>
               </ul>
             </div>
-            </a>
-          </div>
+          </a>
         </div>
-    </section>
-    <!-- CONTACT SECTION -->
-    <section id="contact">
-      <div class="container wow bounceIn">
-        <header class="text-center mb-5">
-          <h2 class="heading">Contactez moi</h2>
-        </header>
-        <div class="row">
-          <div class="col-lg-7 mx-auto">
-            <form action="https://formspree.io/f/mgegvzoy" method="POST">
-              <div class="row gy-3">
-                <div class="col-lg-6">
-                  <input class="form-control" type="text" name="firstname" placeholder="Votre prénom" required>
-                </div>
-                <div class="col-lg-6">
-                  <input class="form-control" type="text" name="lastname" placeholder="Votre nom" required>
-                </div>
-                <div class="col-lg-6">
-                  <input class="form-control" type="email" name="email" placeholder="Votre email" required>
-                </div>
-                <div class="col-lg-12">
-                  <textarea class="form-control" name="message" rows="7" placeholder="Votre message"> </textarea>
-                </div>
-                <div class="col-12 text-center">
-                  <button class="btn btn-outline-primary" type="submit">Envoyer</button>
-                </div>
+        <div class="col-lg-4 col-md-6 mix wow fadeInUp all dev" data-wow-delay="0.1s" data-order="2"><a
+          class="d-block work-item" href="#" data-bs-toggle="modal" data-bs-target="#item2Modal"> <img
+            class="img-fluid w-100" src="img/afpa.png" alt="Jury à l'AFPA">
+          <div class="overlay">
+            <h3 class="work-heading">Jury d’Examen pour la Validation de Titre professionnel Concepteur développeur d’applications</h3>
+            <h4 class="work-header">Novembre 2023</h4>
+          </div>
+        </a>
+      </div>
+      </div>
+  </section>
+  <!-- CONTACT SECTION -->
+  <section id="contact">
+    <div class="container wow bounceIn">
+      <header class="text-center mb-5">
+        <h2 class="heading">Contactez moi</h2>
+      </header>
+      <div class="row">
+        <div class="col-lg-7 mx-auto">
+          <form action="https://formspree.io/f/mgegvzoy" method="POST">
+            <div class="row gy-3">
+              <div class="col-lg-6">
+                <input class="form-control" type="text" name="firstname" placeholder="Votre prénom" required>
               </div>
-            </form>
-          </div>
+              <div class="col-lg-6">
+                <input class="form-control" type="text" name="lastname" placeholder="Votre nom" required>
+              </div>
+              <div class="col-lg-6">
+                <input class="form-control" type="email" name="email" placeholder="Votre email" required>
+              </div>
+              <div class="col-lg-12">
+                <textarea class="form-control" name="message" rows="7" placeholder="Votre message"> </textarea>
+              </div>
+              <div class="col-12 text-center">
+                <button class="btn btn-outline-primary" type="submit">Envoyer</button>
+              </div>
+            </div>
+          </form>
         </div>
       </div>
-    </section>
-    <!-- /- END CONTACT SECTION -->
-    <footer class="py-5 bg-dark text-light">
-      <div class="container py-3">
-        <div class="row gy-3 mb-4 text-center align-items-center">
-          <div class="col-md-6 text-lg-end">
-            <p class="mb-0 font-serif text-sm">© 2024 Adeline LACABANNE. Tous droits réservés.</p>
-          </div>
-        </div>
-        <div class="text-center">
-          <p class="mb-0 small">Template designed by <a href="https://bootstrapious.com">Bootstrapious</a>. </p>
+    </div>
+  </section>
+  <!-- /- END CONTACT SECTION -->
+  <footer class="py-5 bg-dark text-light">
+    <div class="container py-3">
+      <div class="row gy-3 mb-4 text-center align-items-center">
+        <div class="col-md-6 text-lg-end">
+          <p class="mb-0 font-serif text-sm">© 2024 Adeline LACABANNE. Tous droits réservés.</p>
         </div>
       </div>
-    </footer>
-    <!-- JavaScript files-->
-    <script>
-      // Obtenir la date actuelle
-      const dateActuelle = new Date();
-      // La date de naissance
-      const dateNaissance = new Date('1994-12-05');
-      // Calculer l'âge
-      let age = dateActuelle.getFullYear() - dateNaissance.getFullYear();
-      // Vérifier si le mois actuel est antérieur au mois de naissance
-      if (dateActuelle.getMonth() < dateNaissance.getMonth() || (dateActuelle.getMonth() === dateNaissance.getMonth() && dateActuelle.getDate() < dateNaissance.getDate())) {
-        age--;
-      }
-    
-      // Mettre à jour l'âge chaque 5 décembres
-      if (dateActuelle.getMonth() === 11 && dateActuelle.getDate() === 5) {
-        age++;
-      }
-    
-      // Afficher l'âge dans la console (vous pouvez le modifier selon vos besoins)
-      console.log("Âge actuel : " + age);
+      <div class="text-center">
+        <p class="mb-0 small">Template designed by <a href="https://bootstrapious.com">Bootstrapious</a>. </p>
+      </div>
+    </div>
+  </footer>
+  <!-- JavaScript files-->
+  <script>
+    // Obtenir la date actuelle
+    const dateActuelle = new Date();
+    // La date de naissance
+    const dateNaissance = new Date('1994-12-05');
+    // Calculer l'âge
+    let age = dateActuelle.getFullYear() - dateNaissance.getFullYear();
+    // Vérifier si le mois actuel est antérieur au mois de naissance
+    if (dateActuelle.getMonth() < dateNaissance.getMonth() || (dateActuelle.getMonth() === dateNaissance.getMonth() && dateActuelle.getDate() < dateNaissance.getDate())) {
+      age--;
+    }
 
-      document.getElementById('age').innerText = age;
+    // Mettre à jour l'âge chaque 5 décembres
+    if (dateActuelle.getMonth() === 11 && dateActuelle.getDate() === 5) {
+      age++;
+    }
 
-    </script>
-    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-    <script src="vendor/swiper/swiper-bundle.min.js"></script>
-    <script src="vendor/waypoints/lib/noframework.waypoints.min.js"></script>
-    <script src="vendor/universal-parallax/universal-parallax.min.js"></script>
-    <script src="vendor/wow.js/wow.min.js"></script>
-    <script src="vendor/leaflet/leaflet.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/countup.js/1.8.2/countUp.min.js"></script>
-    <script src="vendor/mixitup/mixitup.js"></script>
-    <script src="js/leaflet.js"></script>
-    <script src="js/theme.js"></script>
-    <!-- FontAwesome CSS - loading as last, so it doesn't block rendering-->
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
-  </body>
+    // Afficher l'âge dans la console (vous pouvez le modifier selon vos besoins)
+    console.log("Âge actuel : " + age);
+
+    document.getElementById('age').innerText = age;
+
+  </script>
+  <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="vendor/swiper/swiper-bundle.min.js"></script>
+  <script src="vendor/waypoints/lib/noframework.waypoints.min.js"></script>
+  <script src="vendor/universal-parallax/universal-parallax.min.js"></script>
+  <script src="vendor/wow.js/wow.min.js"></script>
+  <script src="vendor/leaflet/leaflet.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/countup.js/1.8.2/countUp.min.js"></script>
+  <script src="vendor/mixitup/mixitup.js"></script>
+  <script src="js/leaflet.js"></script>
+  <script src="js/theme.js"></script>
+  <!-- FontAwesome CSS - loading as last, so it doesn't block rendering-->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css"
+    integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+</body>
+
 </html>
